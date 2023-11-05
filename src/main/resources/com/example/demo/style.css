@@ -1,0 +1,8 @@
+.text-input {
+    -fx-text-fill : #ffff;
+}
+
+.button {
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+}

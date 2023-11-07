@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="668.0" prefWidth="616.0" style="-fx-background-color: #443659;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.controles.MainController">
+   <children>
+      <HBox alignment="CENTER" layoutX="-8.0" layoutY="-7.0" prefHeight="91.0" prefWidth="632.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label text="Menú Principal" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Pane layoutY="91.0" prefHeight="577.0" prefWidth="616.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Separator layoutX="43.0" layoutY="13.0" opacity="0.36" prefHeight="0.0" prefWidth="524.0" />
+            <Separator layoutX="46.0" layoutY="428.0" opacity="0.36" prefHeight="0.0" prefWidth="524.0" />
+            <VBox alignment="CENTER" layoutX="48.0" layoutY="42.0" prefHeight="368.0" prefWidth="524.0" spacing="20.0">
+               <children>
+                  <Button fx:id="registrarSocio" mnemonicParsing="false" onMouseClicked="#resgistrarPersonaOnClick" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: #B591D9;" stylesheets="@style.css" text="Afiliar Socio" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="personaAutorizada" mnemonicParsing="false" onMouseClicked="#personaAutorizadaOnClick" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: #B591D9;" stylesheets="@style.css" text="Persona Autorizada" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="registrarConsumo" mnemonicParsing="false" onMouseClicked="#resgistrarConsumoOnClick" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: #B591D9;" stylesheets="@style.css" text="Registrar Consumo" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="pagarFactura" mnemonicParsing="false" onMouseClicked="#pagarFacturaOnClick" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: #B591D9;" stylesheets="@style.css" text="Pagar Factura" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="aumentarFondos" mnemonicParsing="false" onMouseClicked="#aumentarFondosOnClick" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: #B591D9;" stylesheets="@style.css" text="Aumentar Fondos" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="eliminarPersona" defaultButton="true" mnemonicParsing="false" onMouseClicked="#eliminarPersonaOnClick" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: #8C456C;" stylesheets="@style.css" text="Eliminar Socio" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman" size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

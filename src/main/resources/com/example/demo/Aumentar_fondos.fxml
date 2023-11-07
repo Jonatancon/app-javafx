@@ -14,12 +14,11 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="668.0" prefWidth="616.0" style="-fx-background-color: #443659;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <HBox alignment="CENTER" layoutX="-8.0" layoutY="-7.0" prefHeight="91.0" prefWidth="632.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Label text="Registro de Socios" textFill="WHITE">
+            <Label text="Aumentar fondos" textFill="WHITE">
                <font>
                   <Font name="Times New Roman" size="36.0" />
                </font>
@@ -42,30 +41,28 @@
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Label text="Nombre completo" textFill="WHITE">
+                  <Label text="Socio" textFill="WHITE" GridPane.rowIndex="1">
                      <font>
                         <Font name="Times New Roman" size="22.0" />
                      </font>
                   </Label>
-                  <TextField prefHeight="41.0" prefWidth="302.0" style="-fx-border-color: #B591D9; -fx-background-color: #443659; -fx-background-insets: 0; -fx-border-radius: 20;" styleClass="text-input" stylesheets="@style.css" GridPane.columnIndex="1" />
-                  <Label text="Identificación" textFill="WHITE" GridPane.rowIndex="1">
+                  <Label text="Aumento" textFill="WHITE" GridPane.rowIndex="2">
                      <font>
                         <Font name="Times New Roman" size="22.0" />
                      </font>
                   </Label>
-                  <TextField prefHeight="41.0" prefWidth="302.0" style="-fx-border-color: #B591D9; -fx-background-color: #443659; -fx-background-insets: 0; -fx-border-radius: 20;" styleClass="text-input" stylesheets="@style.css" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                  <Label text="Tipo membresía" textFill="WHITE" GridPane.rowIndex="2">
+                  <TextField prefHeight="41.0" prefWidth="302.0" style="-fx-border-color: #B591D9; -fx-background-color: #443659; -fx-background-insets: 0; -fx-border-radius: 20;" styleClass="text-input" stylesheets="@style.css" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <ChoiceBox prefHeight="41.0" prefWidth="354.0" style="-fx-border-color: #B591D9; -fx-background-color: #443659; -fx-background-insets: 0; -fx-border-radius: 20;" styleClass="text-input" stylesheets="@style.css" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label text="Total Fondos" textFill="WHITE" GridPane.rowIndex="3">
                      <font>
                         <Font name="Times New Roman" size="22.0" />
                      </font>
                   </Label>
-                  <Label text="Créditos inicial" textFill="WHITE" GridPane.rowIndex="3">
+                  <Label text="\$" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3">
                      <font>
                         <Font name="Times New Roman" size="22.0" />
                      </font>
                   </Label>
-                  <TextField prefHeight="41.0" prefWidth="302.0" style="-fx-border-color: #B591D9; -fx-background-color: #443659; -fx-background-insets: 0; -fx-border-radius: 20;" styleClass="text-input" stylesheets="@style.css" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                  <ChoiceBox prefHeight="41.0" prefWidth="354.0" style="-fx-border-color: #B591D9; -fx-background-color: #443659; -fx-background-insets: 0; -fx-border-radius: 20;" styleClass="text-input" stylesheets="@style.css" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                </children>
             </GridPane>
             <HBox alignment="CENTER" layoutX="52.0" layoutY="450.0" prefHeight="100.0" prefWidth="524.0" spacing="160.0">

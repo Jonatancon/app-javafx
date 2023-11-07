@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.String?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ChoiceBox?>
@@ -64,7 +65,11 @@
                      </font>
                   </Label>
                   <TextField fx:id="creditoInicial" prefHeight="41.0" prefWidth="302.0" style="-fx-border-color: #B591D9; -fx-background-color: #443659; -fx-background-insets: 0; -fx-border-radius: 20;" styleClass="text-input" stylesheets="@style.css" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                  <ChoiceBox fx:id="tipoMembresia" prefHeight="41.0" prefWidth="354.0" style="-fx-border-color: #B591D9; -fx-background-color: #443659; -fx-background-insets: 0; -fx-border-radius: 20;" styleClass="text-input" stylesheets="@style.css" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <ChoiceBox fx:id="tipoMembresia" prefHeight="41.0" prefWidth="354.0" style="-fx-border-color: #B591D9; -fx-background-color: #443659; -fx-background-insets: 0; -fx-border-radius: 20;" stylesheets="@style.css" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <styleClass>
+                        <String fx:value="label" />
+                        <String fx:value="tipoMembresia" />
+                     </styleClass></ChoiceBox>
                </children>
             </GridPane>
             <HBox alignment="CENTER" layoutX="52.0" layoutY="450.0" prefHeight="100.0" prefWidth="524.0" spacing="160.0">
@@ -74,7 +79,7 @@
                         <Font name="Times New Roman" size="24.0" />
                      </font>
                   </Button>
-                  <Button defaultButton="true" mnemonicParsing="false" prefHeight="50.0" prefWidth="140.0" style="-fx-background-color: #B591D9;" stylesheets="@style.css" text="Crear" textAlignment="CENTER" textFill="WHITE">
+                  <Button defaultButton="true" mnemonicParsing="false" onMouseClicked="#guardarSocio" prefHeight="50.0" prefWidth="140.0" style="-fx-background-color: #B591D9;" stylesheets="@style.css" text="Crear" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="Times New Roman" size="24.0" />
                      </font>

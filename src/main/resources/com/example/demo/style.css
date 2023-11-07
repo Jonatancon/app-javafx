@@ -1,5 +1,13 @@
 .text-input {
     -fx-text-fill : #ffff;
+    -fx-text-color: #ffff;
+}
+
+.tipoMembresia .label {
+    -fx-border-color: #B591D9;
+    -fx-background-color:  #443659;
+    -fx-border-radius: 20;
+    -fx-text-fill: #ffff;
 }
 
 .button {

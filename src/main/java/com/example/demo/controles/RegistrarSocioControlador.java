@@ -8,8 +8,6 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextField;
-
-import javax.print.DocFlavor;
 import javax.swing.*;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -24,7 +22,8 @@ public class RegistrarSocioControlador implements Initializable {
     @FXML
     private TextField creditoInicial;
 
-    private Club club = new Club();
+    private ClubControlador clubControlador = ClubControlador.getInstancia();
+
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -36,20 +35,22 @@ public class RegistrarSocioControlador implements Initializable {
 
     @FXML
     public void guardarSocio() {
-         Socio socio = validarCampos();
-
+        Socio socio = validarCampos();
         if (validarCupos() && socio != null) {
-            club.getListaSocios().add(socio);
+            clubControlador.getClub().getListaSocios().add(socio);
             JOptionPane.showMessageDialog(null, "Socio creado");
         }
-        JOptionPane.showMessageDialog(null, "No se pudo crear el Socio");
+        else {
+            JOptionPane.showMessageDialog(null, "No se pudo crear el Socio");
+        }
     }
 
     private boolean validarCupos() {
-        if (club.getListaSocios().size() > 30) {
+        if (clubControlador.getClub().getListaSocios().size() > 30) {
             JOptionPane.showMessageDialog(null, "Ya se agotaron los cupos del club");
         }
-        return club.getListaSocios().size() < 30;
+
+        return clubControlador.getClub().getListaSocios().size() < 30;
     }
 
     private Socio validarCampos () {

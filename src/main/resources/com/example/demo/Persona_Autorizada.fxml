@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.String?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ChoiceBox?>
@@ -14,7 +15,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="668.0" prefWidth="616.0" style="-fx-background-color: #443659;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="668.0" prefWidth="616.0" style="-fx-background-color: #443659;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.controles.AutorizadoControlador">
    <children>
       <HBox alignment="CENTER" layoutX="-8.0" layoutY="-7.0" prefHeight="91.0" prefWidth="632.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -46,19 +47,23 @@
                         <Font name="Times New Roman" size="22.0" />
                      </font>
                   </Label>
-                  <TextField prefHeight="41.0" prefWidth="302.0" style="-fx-border-color: #B591D9; -fx-background-color: #443659; -fx-background-insets: 0; -fx-border-radius: 20;" styleClass="text-input" stylesheets="@style.css" GridPane.columnIndex="1" />
+                  <TextField fx:id="nombreAfiliado" prefHeight="41.0" prefWidth="302.0" style="-fx-border-color: #B591D9; -fx-background-color: #443659; -fx-background-insets: 0; -fx-border-radius: 20;" styleClass="text-input" stylesheets="@style.css" GridPane.columnIndex="1" />
                   <Label text="Identificación" textFill="WHITE" GridPane.rowIndex="1">
                      <font>
                         <Font name="Times New Roman" size="22.0" />
                      </font>
                   </Label>
-                  <TextField prefHeight="41.0" prefWidth="302.0" style="-fx-border-color: #B591D9; -fx-background-color: #443659; -fx-background-insets: 0; -fx-border-radius: 20;" styleClass="text-input" stylesheets="@style.css" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="idAfiliado" prefHeight="41.0" prefWidth="302.0" style="-fx-border-color: #B591D9; -fx-background-color: #443659; -fx-background-insets: 0; -fx-border-radius: 20;" styleClass="text-input" stylesheets="@style.css" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                   <Label text="Socio a vincular" textFill="WHITE" GridPane.rowIndex="2">
                      <font>
                         <Font name="Times New Roman" size="22.0" />
                      </font>
                   </Label>
-                  <ChoiceBox prefHeight="41.0" prefWidth="354.0" style="-fx-border-color: #B591D9; -fx-background-color: #443659; -fx-background-insets: 0; -fx-border-radius: 20;" styleClass="text-input" stylesheets="@style.css" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <ChoiceBox fx:id="socioVinculado" prefHeight="41.0" prefWidth="354.0" style="-fx-border-color: #B591D9; -fx-background-color: #443659; -fx-background-insets: 0; -fx-border-radius: 20;" stylesheets="@style.css" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <styleClass>
+                        <String fx:value="tipoMembresia" />
+                        <String fx:value="label" />
+                     </styleClass></ChoiceBox>
                </children>
             </GridPane>
             <HBox alignment="CENTER" layoutX="52.0" layoutY="450.0" prefHeight="100.0" prefWidth="524.0" spacing="160.0">
@@ -68,7 +73,7 @@
                         <Font name="Times New Roman" size="24.0" />
                      </font>
                   </Button>
-                  <Button defaultButton="true" mnemonicParsing="false" prefHeight="50.0" prefWidth="140.0" style="-fx-background-color: #B591D9;" stylesheets="@style.css" text="Crear" textAlignment="CENTER" textFill="WHITE">
+                  <Button defaultButton="true" mnemonicParsing="false" onMouseClicked="#guardarAutorizado" prefHeight="50.0" prefWidth="140.0" style="-fx-background-color: #B591D9;" stylesheets="@style.css" text="Crear" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="Times New Roman" size="24.0" />
                      </font>
